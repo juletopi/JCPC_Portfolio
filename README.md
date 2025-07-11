@@ -11,9 +11,9 @@
 
 <div align="center">
   <a href="">
-    <img src="https://github.com/user-attachments/assets/a3e6ca25-6035-4a7a-94b9-f35cb9d24a96" alt="JCPC-Logo-pic" width="160px" title="Repositório do meu primeiro portfólio">
+    <img src="https://github.com/user-attachments/assets/a3e6ca25-6035-4a7a-94b9-f35cb9d24a96" alt="JCPC-Logo-pic" width="160px" title="Repositório do meu primeiro portfolio">
   </a>
-  <h2 align="center">J.C.P.C Portfólio</h2>
+  <h2 align="center">J.C.P.C Portfolio</h2>
 </div>
 
 <div align="center">
@@ -24,7 +24,7 @@
 
 <div align="center">
  
-  • Repositório contendo o meu primeiro projeto de portfólio.
+  • Repositório contendo o meu primeiro projeto de portfolio.
  
 </div>
 
@@ -59,10 +59,10 @@
 
 A página foi criada como conteúdo da avaliação final para a disciplina de [Programação Web](https://github.com/juletopi/Programacao_Web).
 
-O objetivo com a criação desta página-web, é criar um portfólio utilizando-se das práticas aprendidas durante o semestre.
+O objetivo com a criação desta página-web, é criar um portfolio utilizando-se das práticas aprendidas durante o semestre.
 
 <div align="left">
-  <h6><a href="#jcpc-portfólio"> Voltar para o início ↺</a></h6>
+  <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
 </div>
 
 ## 👩‍💻 Tecnologias Utilizadas
@@ -78,7 +78,7 @@ O objetivo com a criação desta página-web, é criar um portfólio utilizando-
 </a>
 
 <div align="left">
-  <h6><a href="#jcpc-portfólio"> Voltar para o início ↺</a></h6>
+  <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
 </div>
 <br>
 
@@ -143,7 +143,7 @@ O objetivo com a criação desta página-web, é criar um portfólio utilizando-
 </table>
 
 <div align="left">
-  <h6><a href="#jcpc-portfólio"> Voltar para o início ↺</a></h6>
+  <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
 </div>
 
 <br>
