@@ -49,6 +49,7 @@
 <br>
 
 <div align="center">
+  <a href="https://github.com/juletopi/JCPC_Portfolio/blob/main/CONTRIBUTING.md">Como contribuir</a> &#xa0; • &#xa0;
   <a href="https://github.com/juletopi/JCPC_Portfolio/issues">Issues</a> &#xa0; • &#xa0;
   <a href="https://github.com/juletopi/JCPC_Portfolio/discussions">Discussions</a>
 </div>
@@ -57,9 +58,9 @@
 
 ## 📝 Descrição do Projeto
 
-A página foi criada como conteúdo da avaliação final para a disciplina de [Programação Web](https://github.com/juletopi/Programacao_Web).
+A página foi inicialmente criada como conteúdo da avaliação final para a disciplina de [Programação Web](https://github.com/juletopi/Programacao_Web) do curso de ADS (Análise e Desenvolvimento de Sistemas) do IFRO Campus Ji-Paraná.
 
-O objetivo com a criação desta página-web, é criar um portfolio utilizando-se das práticas aprendidas durante o semestre.
+O objetivo com a criação desta página-web, é criar um portfolio utilizando-se das práticas aprendidas durante a disciplina.
 
 <div align="left">
   <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
@@ -80,6 +81,25 @@ O objetivo com a criação desta página-web, é criar um portfolio utilizando-s
 <div align="left">
   <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
 </div>
+
+<!-- CONTRIBUTIONS -->
+
+## 🤝 Contribuições
+
+<p>Todas as contribuições ao projeto são bem vindas!<br>Se você deseja contribuir para este projeto, há várias maneiras de fazer isso. Você pode:</p>
+<ul>
+  <li>Reportar bugs ou problemas;</li>
+  <li>Propor novos recursos ou melhorias;</li>
+  <li>Corrigir problemas através de pull requests;</li>
+  <li>Ajudar a melhorar a documentação;</li>
+  <li>Compartilhar o projeto com outras pessoas.</li>
+</ul>
+<p>Para saber mais sobre como contribuir, consulte o guia de contribuição <a href="https://github.com/juletopi/JCPC_Portfolio/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+
+<div align="left">
+  <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
+</div>
+
 <br>
 
 <!-- AUTHOR -->
