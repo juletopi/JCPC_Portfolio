@@ -29,26 +29,6 @@ https://getemoji.com
 </div>
 
 <div align="center">
-    <a href="https://code.visualstudio.com/">
-        <img src="https://img.shields.io/badge/Made%20with%20IDE:-VSCode%20-gray.svg?colorA=3d85c6&amp;colorB=0b5394&amp;style=for-the-badge" alt="VSCodeIDE-badge" style="max-width: 100%;">
-    </a>
-    <a href="https://www.w3schools.com/html/">
-        <img src="https://img.shields.io/badge/Made%20with%20language:-HTML%20-gray.svg?colorA=d2704c&amp;colorB=d25526&amp;style=for-the-badge" alt="HTMLLanguage-badge" style="max-width: 100%;">
-    </a>
-</div>
-
-<div align="center">
-    <a href="https://www.w3schools.com/css/">
-        <img src="https://img.shields.io/badge/Made%20with%20language:-CSS%20-gray.svg?colorA=615484&amp;colorB=483675&amp;style=for-the-badge" alt="CSSLanguage-badge" style="max-width: 100%;">
-    </a>
-    <a href="https://www.w3schools.com/js/">
-        <img src="https://img.shields.io/badge/Made%20with%20language:-JavaScript%20-gray.svg?colorA=ccaa44&amp;colorB=ca9c0d&amp;style=for-the-badge" alt="JavaScriptLanguage-badge" style="max-width: 100%;">
-    </a>
-</div>
-
-<br>
-
-<div align="center">
   <a href="https://github.com/juletopi/JCPC_Portfolio/blob/main/CONTRIBUTING.md">Como contribuir</a> &#xa0; • &#xa0;
   <a href="https://github.com/juletopi/JCPC_Portfolio/issues">Issues</a> &#xa0; • &#xa0;
   <a href="https://github.com/juletopi/JCPC_Portfolio/discussions">Discussions</a>
@@ -58,9 +38,9 @@ https://getemoji.com
 
 ## 📝 Descrição do Projeto
 
-A página foi inicialmente criada como conteúdo da avaliação final para a disciplina de [Programação Web](https://github.com/juletopi/Programacao_Web) do curso de ADS (Análise e Desenvolvimento de Sistemas) do IFRO Campus Ji-Paraná.
+A página foi inicialmente criada como conteúdo de avaliação final de uma disciplina curso de ADS que fiz, mas continuei trabalhando por cima depois disso.
 
-O objetivo com a criação desta página-web, é criar um portfolio utilizando-se das práticas aprendidas durante a disciplina.
+O projeto evoluiu para um portfolio com tema pixel/retro, misturando elementos e assets do meu gosto como Stardew Valley e skill tree estilo RPG para exibição de tecnologias e ferramentas.
 
 <div align="left">
   <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
@@ -71,11 +51,20 @@ O objetivo com a criação desta página-web, é criar um portfolio utilizando-s
 <a href="https://www.w3schools.com/html/">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML-badge" width="97px">
 </a>
-  <a href="https://www.w3schools.com/css/">
+<a href="https://www.w3schools.com/css/">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"alt="CSS-badge" width="63px">
 </a>
 <a href="https://www.w3schools.com/js/">
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript-badge" width="140px">
+</a>
+<a href="https://getbootstrap.com/">
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap-badge" width="130px">
+</a>
+<a href="https://jquery.com/">
+  <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery-badge" width="100px">
+</a>
+<a href="https://devicon.dev/">
+  <img src="https://img.shields.io/badge/Devicon-60BAE8?style=for-the-badge&logo=devicon&logoColor=white" alt="Devicon-badge" width="87px">
 </a>
 
 <div align="left">
