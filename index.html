@@ -1,183 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JCPC | Dev Full-Stack</title>
-    <meta name="description" content="Portfolio de Júlio Cézar Pereira Camargo — Desenvolvedor Full-stack.">
-    <meta name="keywords" content="Júlio Cézar, juletopi, portfolio, desenvolvedor, full stack, web design, GitHub, HTML, CSS, JavaScript, projetos, programação">
-    <meta name="author" content="Júlio Cézar Pereira Camargo">
-    <meta property="og:title" content="JCPC | Dev Full-Stack">
-    <meta property="og:description" content="Conheça os projetos e habilidades de Júlio Cézar, desenvolvedor full-stack.">
-    <meta property="og:image" content="https://juletopi.github.io/JCPC_Portfolio/src/images/initialsIcon.png">
-    <meta property="og:url" content="https://juletopi.github.io/JCPC_Portfolio/">
-    <meta property="og:type" content="website">
-    <!-- Styles -->
-    <link rel="stylesheet" href="src/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="src/css/fonts.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/pseudoElementStyles.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
-    <link rel="shortcut icon" href="src/images/initialsIcon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="src/images/icons/favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <!-- Header -->
-    <header class="main-title">
-        <div class="parallax-container">
-            <img src="src/images/initialsLogo.png" alt="Iniciais J.C.P.C">
-            <h1>PORTFOLIO</h1>
-            <hr>
-            <p class="main-title-highlight">Desenvolvedor Full-Stack</p>
+<body class="crt-overlay">
+
+    <nav class="fixed-top p-3 d-flex justify-content-end align-items-center">
+        <button id="theme-toggle-btn" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </nav>
+
+    <header id="home" class="min-vh-100 d-flex align-items-center justify-content-center overflow-hidden position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="retro-tv-container fade-in-left">
+                        <div class="tv-antenna"></div>
+                        <div class="tv-body">
+                            <div class="tv-screen-bezel">
+                                <div class="tv-screen">
+                                    <div class="tv-content">
+                                        <div class="glitch-wrapper">
+                                            <h1 class="glitch" data-text="PORTFOLIO"> J.C.P.C. PORTFOLIO</h1>
+                                        </div>
+                                        <hr class="pixel-line">
+                                        <p class="typed-text"></p>
+                                        <div class="scanlines"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-controls">
+                                <div class="dial"></div>
+                                <div class="dial"></div>
+                                <div class="vent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="game-menu fade-in-right">
+                        <h2 class="pixel-heading mb-4">SELECT LEVEL</h2>
+                        <ul class="list-unstyled menu-list">
+                            <li><a href="#about" class="menu-item active"><span>▶</span> 01. SOBRE MIM</a></li>
+                            <li><a href="#projects" class="menu-item"><span>▶</span> 02. MEUS PROJETOS</a></li>
+                            <li><a href="#skills" class="menu-item"><span>▶</span> 03. SKILL TREE</a></li>
+                            <li><a href="https://github.com/juletopi/JCPC_Portfolio" target="_blank" class="menu-item text-warning"><span>▶</span> 04. SOURCE CODE (GITHUB)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Sobre mim -->
-    <section class="about-me">
-        <h2>SOBRE<br><span class="about-me-highlight">MIM</span></h2>
-        <p>
-            Heya folks! Me chamo Julio Cezar Pereira Camargo (a.k.a Juletopi). Sou um desenvolvedor Full-Stack e graduando de Analise e Desenvolvimento de Sistemas no IFRO Campus Ji-Parana.
-            <br><br>
-            Trabalho profissionalmente como DEV AUXILIAR na empresa <a href="https://www.linkedin.com/company/efici%C3%AAncia-fiscal/" target="_blank">EFICIENCIA FISCAL</a>, onde desenvolvo modulos automatizados de emissao de CND, utilizando de webscraping e bibliotecas Python no meu dia-a-dia.
-            <br><br>
-            No meu tempo livre, voce provavelmente vai me encontrar estudando, ouvindo rock, assistindo anime, jogando na Steam ou lendo mangas.
-            <br><br>
-            Meus animes favoritos sao: 3º Genshiken Nidaime, 2º Hunter x Hunter e 1º Made in Abyss.
-            <br><br>
-            Curto musica lo-fi, rock e eletronica, e minha musica favorita e "Daft Punk - Get Lucky".
-            <br><br>
-            Sou um gamer casual hoje-em-dia. Amo jogar Minecraft, Stardew Valley, The Witcher 3, Dying Light, e o meu favorito: Sunset Overdrive.
-        </p>
-        <img src="src/images/JulioCezarImage.png" alt="JulioCezarPicture">
-    </section>
-
-    <!-- Meus projetos -->
-    <section class="my-projects">
-        <h2>MEUS<br><span class="my-projects-highlight">PROJETOS</span></h2>
-        <div class="projects-container">
-            <div class="project-item">
-                <h3>Projeto 1</h3>
-                <a href="https://github.com/juletopi/Pagina_Calculadora_de_Soma_Simples" target="_blank">
-                    <img src="src/images/PaginaCalculadoraSomaSimplesBanner.png" alt="Projeto Calculadora Simples">
-                </a>
-                <p>Uma simples pagina de calculadora onde utilizei JQuery para melhor otimizar o JavaScript.</p>
-            </div>
-            <div class="project-item">
-                <h3>Projeto 2</h3>
-                <a href="https://github.com/juletopi/Desafio_Pagina_Musical" target="_blank">
-                    <img src="src/images/DesafioPaginaMusicalBanner.png" alt="Desafio Página Musical">
-                </a>
-                <p>Um desafio de desenvolvimento de uma pagina musical sobre a musica "Bem que se Quis", feito com HTML, CSS e JavaScript.</p>
-            </div>
-            <div class="project-item">
-                <h3>Projeto 3</h3>
-                <a href="https://github.com/juletopi/Pagina_Cyberpunk-Edgerunners" target="_blank">
-                    <img src="src/images/PaginaCyberpunkEdgerunnersBanner.png" alt="Página Cyberpunk Edgerunners">
-                </a>
-                <p>O meu projeto mais ambicioso, uma pagina com de tudo um pouco sobre o anime Cyberpunk Edgerunners feita com HTML, CSS e JavaScript.</p>
+    <section id="about" class="py-5 section-pixel">
+        <div class="container">
+            <div class="row align-items-center bg-pixel-card p-4 mt-2 mx-2">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <div class="avatar-container">
+                        <img src="src/images/stardew_valley/portrait_juletopi.png" class="img-fluid portrait-npc" alt="Julio Cezar">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="section-title">SOBRE MIM</span></h2>
+                    <p class="lead pixel-text">
+                        Heya folks! Sou Julio Cezar (Juletopi). Desenvolvedor Full-Stack e estudante do IFRO.<br>
+                        Trabalho criando robôs de webscraping com Python e desenvolvendo sites com PHP Laravel.
+                    </p>
+                    <p class="pixel-text">
+                        No meu tempo livre, voce provavelmente vai me encontrar estudando, ouvindo rock,<br>
+                        assistindo anime, jogando na Steam ou lendo mangas.
+                    </p>
+                    <div class="status-bar mt-3">
+                        <span class="badge bg-custom-primary p-2 me-2">LVL 22</span>
+                        <span class="badge bg-custom-secondary p-2 me-2">CLASS: FULL-SCTACK DEVELOPER</span>
+                        <span class="badge bg-custom-success p-2">HP: 100% ⚡ BOOSTED BY COFFEE </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Principais habilidades -->
-    <section class="main-skills">
-        <h2>PRINCIPAIS<br><span class="main-skills-highlight">HABILIDADES</span></h2>
-        <div class="skills-container">
-            <ul class="skills-list">
-                <li>
-                    <svg viewBox="0 0 128 128">
-                        <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
-                    </svg>
-                    HTML
-                </li>
-                <li>
-                    <svg viewBox="0 0 128 128">
-                        <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
-                    </svg>    
-                    CSS
-                </li>
-                <li>     
-                    <svg viewBox="0 0 128 128">
-                        <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
-                    </svg>    
-                    JavaScript
-                </li>
-                <li>    
-                    <svg viewBox="0 0 128 128">
-                        <path fill="#9B4F96" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#68217A" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6zM97 66.2l.9-4.3h-4.2v-4.7h5.1L100 51h4.9l-1.2 6.1h3.8l1.2-6.1h4.8l-1.2 6.1h2.4v4.7h-3.3l-.9 4.3h4.2v4.7h-5.1l-1.2 6h-4.9l1.2-6h-3.8l-1.2 6h-4.8l1.2-6h-2.4v-4.7H97zm4.8 0h3.8l.9-4.3h-3.8l-.9 4.3z"></path>
-                    </svg>    
-                    CSharp
-                </li>
-                <li>     
-                    <svg viewBox="0 0 128 128">
-                        <defs><linearGradient id="a" x1=".741" x2="590.86" y1="3.666" y2="593.79" gradientTransform="matrix(.2169 0 0 .14527 -.16 14.112)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#cbced0"></stop><stop offset="1" stop-color="#84838b"></stop></linearGradient><linearGradient id="b" x1="301.03" x2="703.07" y1="151.4" y2="553.44" gradientTransform="matrix(.17572 0 0 .17931 -.16 14.112)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#276dc3"></stop><stop offset="1" stop-color="#165caa"></stop></linearGradient></defs><path fill="url(#a)" fill-rule="evenodd" d="M64 100.38c-35.346 0-64-19.19-64-42.863 0-23.672 28.654-42.863 64-42.863s64 19.19 64 42.863c0 23.672-28.654 42.863-64 42.863zm9.796-68.967c-26.866 0-48.646 13.119-48.646 29.303 0 16.183 21.78 29.303 48.646 29.303s46.693-8.97 46.693-29.303c0-20.327-19.827-29.303-46.693-29.303z"></path><path fill="url(#b)" fill-rule="evenodd" d="M97.469 81.033s3.874 1.169 6.124 2.308c.78.395 2.132 1.183 3.106 2.219a8.388 8.388 0 0 1 1.42 2.04l15.266 25.74-24.674.01-11.537-21.666s-2.363-4.06-3.817-5.237c-1.213-.982-1.73-1.331-2.929-1.331h-5.862l.004 28.219-21.833.009V41.26h43.844s19.97.36 19.97 19.359c0 18.999-19.082 20.413-19.082 20.413zm-9.497-24.137-13.218-.009-.006 12.258 13.224-.005s6.124-.019 6.124-6.235c0-6.34-6.124-6.009-6.124-6.009z"></path>
-                    </svg>
-                    R Language
-                </li>
-                <li>   
-                    <svg viewBox="0 0 128 128">
-                        <linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"></stop><stop offset="1" stop-color="#306998"></stop></linearGradient><linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"></stop><stop offset="1" stop-color="#FFE873"></stop></linearGradient><path fill="url(#python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)"></path><path fill="url(#python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)"></path><radialGradient id="python-original-c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop></radialGradient><path opacity=".444" fill="url(#python-original-c)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"></path>
-                    </svg>
-                    Python
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Formação acadêmica -->
-    <section class="academic-formation">
-        <div class="academic-wrapper">
-            <img src="src/images/IFROLogo.jpeg" alt="IFRO Logo">
-            <div class="academic-info">
-                <h2>FORMACAO<br><span class="academic-formation-highlight">ACADEMICA</span></h2>
-                <p><strong>Instituicaoo:</strong> Instituto Federal de Rondonia</p>
-                <p><strong>Curso:</strong> Analise e Desenvolvimento de Sistemas - Presencial</p>
-                <p><strong>Periodo:</strong> 2022 - ate o momento...</p>
-                <p><strong>Local:</strong> IFRO Campus Ji-Parana</p>
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">MEUS PROJETOS</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 pixel-card">
+                        <img src="https://repository-images.githubusercontent.com/1073793572/500dc2fe-bcf2-49f8-8e63-63e33c732330" class="card-img-top pixel-img" alt="PontuaDev">
+                        <div class="card-body">
+                            <h5 class="card-title pixel-font">PontuaDev</h5>
+                            <p class="card-text small">Sistema de pontuação de tasks para devs.</p>
+                            <a href="https://github.com/juletopi/PontuaDev_Project" target="_blank" class="btn btn-pixel w-100">SOURCE CODE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 pixel-card">
+                        <img src="https://repository-images.githubusercontent.com/789066775/dae4928a-0078-46a6-a98a-a57135f8de5b" class="card-img-top pixel-img" alt="Cyberpunk">
+                        <div class="card-body">
+                            <h5 class="card-title pixel-font">Cyberpunk Edgerunners</h5>
+                            <p class="card-text small">Projeto ambicioso temático.</p>
+                            <a href="https://juletopi.github.io/Pagina_Cyberpunk-Edgerunners/" target="_blank" class="btn btn-pixel w-100">PLAY DEMO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 pixel-card">
+                        <img src="https://repository-images.githubusercontent.com/771336659/3e304db1-753b-4d16-b2a0-07ccda806cd0" class="card-img-top pixel-img" alt="Musical">
+                        <div class="card-body">
+                            <h5 class="card-title pixel-font">Página Musical</h5>
+                            <p class="card-text small">Desafio front-end HTML/CSS.</p>
+                            <a href="https://juletopi.github.io/Desafio_Pagina_Musical/" target="_blank" class="btn btn-pixel w-100">PLAY DEMO</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Meus interesses -->
-    <section class="my-interests">
-        <h2>MEUS<br><span class="my-interests-highlight1">INTERE</span><br><span class="my-interests-highlight2">SSES</span></h2>
-        <ul class="interests-list">
-            <li>🖥️💻 Programacao back-end e front-end</li>
-            <li>🎨🖌️ UX/UI Design e Web Design</li>
-            <li>🎮 Videogames</li>
-            <li>📚 Aprender</li>
-            <li>🚲 Ciclismo</li>
-            <li>🎧 Musica</li>
-            <li>🍜 Anime</li>
-            <li>🎲 RPG</li>
-        </ul>
-        <img src="src/images/bikeImage.png" alt="JulioCezarBikePicture">
+    <section id="skills" class="py-5 section-alt-bg">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">SKILL TREE</span></h2>
+            
+            <div id="skill-tree-root" class="row justify-content-center">
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="pixel-text small opacity-50">* Passe o mouse sobre os ícones para ver os status *</p>
+            </div>
+        </div>
     </section>
-
-    <!-- Seção extra "Imagens" -->
-    <section class="extra-images">
-        <img id="image1" src="src/images/NFS2015GameImage.png" alt="NeedForSpeedGamePicture">
-        <img id="image2" src="src/images/MinecraftGameImage.png" alt="MinecraftGamePicture">
-        <img id="image3" src="src/images/TheDivision2GameImage.png" alt="TheDivison2GamePicture">
-    </section>
-
-    <div class="arrow-container">
-        <span class="arrow"></span>
-    </div>
-
-    <!-- GitHub button -->
-    <div class="button-container">
-        <a href="https://github.com/juletopi" target="_blank">
-            <button id="github-button-id" class="github-button">
-                Visite o meu Github 
-                <svg id="github-button-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256"style="fill:#000000;"><g fill="#a59cc2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M32,6c-14.359,0 -26,11.641 -26,26c0,12.277 8.512,22.56 19.955,25.286c-0.592,-0.141 -1.179,-0.299 -1.755,-0.479v-5.957c0,0 -0.975,0.325 -2.275,0.325c-3.637,0 -5.148,-3.245 -5.525,-4.875c-0.229,-0.993 -0.827,-1.934 -1.469,-2.509c-0.767,-0.684 -1.126,-0.686 -1.131,-0.92c-0.01,-0.491 0.658,-0.471 0.975,-0.471c1.625,0 2.857,1.729 3.429,2.623c1.417,2.207 2.938,2.577 3.721,2.577c0.975,0 1.817,-0.146 2.397,-0.426c0.268,-1.888 1.108,-3.57 2.478,-4.774c-6.097,-1.219 -10.4,-4.716 -10.4,-10.4c0,-2.928 1.175,-5.619 3.133,-7.792c-0.2,-0.567 -0.533,-1.714 -0.533,-3.583c0,-1.235 0.086,-2.751 0.65,-4.225c0,0 3.708,0.026 7.205,3.338c1.614,-0.47 3.341,-0.738 5.145,-0.738c1.804,0 3.531,0.268 5.145,0.738c3.497,-3.312 7.205,-3.338 7.205,-3.338c0.567,1.474 0.65,2.99 0.65,4.225c0,2.015 -0.268,3.19 -0.432,3.697c1.898,2.153 3.032,4.802 3.032,7.678c0,5.684 -4.303,9.181 -10.4,10.4c1.628,1.43 2.6,3.513 2.6,5.85v8.557c-0.576,0.181 -1.162,0.338 -1.755,0.479c11.443,-2.726 19.955,-13.009 19.955,-25.286c0,-14.359 -11.641,-26 -26,-26zM33.813,57.93c-0.599,0.042 -1.203,0.07 -1.813,0.07c0.61,0 1.213,-0.029 1.813,-0.07zM37.786,57.346c-1.164,0.265 -2.357,0.451 -3.575,0.554c1.218,-0.103 2.411,-0.29 3.575,-0.554zM32,58c-0.61,0 -1.214,-0.028 -1.813,-0.07c0.6,0.041 1.203,0.07 1.813,0.07zM29.788,57.9c-1.217,-0.103 -2.411,-0.289 -3.574,-0.554c1.164,0.264 2.357,0.451 3.574,0.554z"></path></g></g></svg>
-            </button>
-        </a>
-    </div>
     
-    <!-- Footer -->
     <footer class="footer">
-        <p>Todos os direitos reservados &copy; <span id="current-year"></span> ┃ Feito com ♥️ por Juletopi.</p>
-        <p id="my-links">Me encontre aqui:</p>
+        <p>© <span id="year"></span> Feito com ♥️ por Juletopi</p>
         <div class="personal-social-icons">
             <a id="facebook-icon" href="https://www.facebook.com/profile.php?id=100006955867774" target="_blank" title="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256"style="fill:#000000;"><g fill="#a59cc2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g></svg>
@@ -191,15 +162,12 @@
             <a id="github-icon" href="https://github.com/juletopi" target="_blank" title="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256"style="fill:#000000;"><g fill="#a59cc2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M32,6c-14.359,0 -26,11.641 -26,26c0,12.277 8.512,22.56 19.955,25.286c-0.592,-0.141 -1.179,-0.299 -1.755,-0.479v-5.957c0,0 -0.975,0.325 -2.275,0.325c-3.637,0 -5.148,-3.245 -5.525,-4.875c-0.229,-0.993 -0.827,-1.934 -1.469,-2.509c-0.767,-0.684 -1.126,-0.686 -1.131,-0.92c-0.01,-0.491 0.658,-0.471 0.975,-0.471c1.625,0 2.857,1.729 3.429,2.623c1.417,2.207 2.938,2.577 3.721,2.577c0.975,0 1.817,-0.146 2.397,-0.426c0.268,-1.888 1.108,-3.57 2.478,-4.774c-6.097,-1.219 -10.4,-4.716 -10.4,-10.4c0,-2.928 1.175,-5.619 3.133,-7.792c-0.2,-0.567 -0.533,-1.714 -0.533,-3.583c0,-1.235 0.086,-2.751 0.65,-4.225c0,0 3.708,0.026 7.205,3.338c1.614,-0.47 3.341,-0.738 5.145,-0.738c1.804,0 3.531,0.268 5.145,0.738c3.497,-3.312 7.205,-3.338 7.205,-3.338c0.567,1.474 0.65,2.99 0.65,4.225c0,2.015 -0.268,3.19 -0.432,3.697c1.898,2.153 3.032,4.802 3.032,7.678c0,5.684 -4.303,9.181 -10.4,10.4c1.628,1.43 2.6,3.513 2.6,5.85v8.557c-0.576,0.181 -1.162,0.338 -1.755,0.479c11.443,-2.726 19.955,-13.009 19.955,-25.286c0,-14.359 -11.641,-26 -26,-26zM33.813,57.93c-0.599,0.042 -1.203,0.07 -1.813,0.07c0.61,0 1.213,-0.029 1.813,-0.07zM37.786,57.346c-1.164,0.265 -2.357,0.451 -3.575,0.554c1.218,-0.103 2.411,-0.29 3.575,-0.554zM32,58c-0.61,0 -1.214,-0.028 -1.813,-0.07c0.6,0.041 1.203,0.07 1.813,0.07zM29.788,57.9c-1.217,-0.103 -2.411,-0.289 -3.574,-0.554c1.164,0.264 2.357,0.451 3.574,0.554z"></path></g></g></svg>
             </a>
-            <a id="whatsapp-icon" href="http://api.whatsapp.com/send?phone=5569993606894" target="_blank" title="Whatsapp">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256"style="fill:#000000;"><g fill="#a59cc2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"></path></g></g></svg>
-            </a>
         </div>
-        <p id="repository-link">Clique <a href="https://github.com/juletopi/JCPC_Portfolio" target="_blank">aqui</a> para acessar o repositório deste portfolio.</p>
     </footer>
 
-    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/skill-tree.js"></script>
     <script src="src/js/script.js"></script>
 </body>
 </html>
-

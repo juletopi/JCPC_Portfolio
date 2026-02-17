@@ -1,20 +1,30 @@
-/* Definição da fonte DisposableDroidBB-Regular */
 @font-face {
     font-family: "DisposableDroidBB-Regular";
-    src: url("../fonts/DisposableDroidBB-Regular.ttf") format("woff2"),
-         url("../fonts/DisposableDroidBB-Regular.ttf") format("woff");
+    src: url("../fonts/DisposableDroidBB.woff") format("woff");
 }
 
-/* Definição da fonte DisposableDroidBB-Bold */
 @font-face {
     font-family: "DisposableDroidBB-Bold";
-    src: url("../fonts/DisposableDroidBB-Bold.ttf") format("woff2"),
-         url("../fonts/DisposableDroidBB-Bold.ttf") format("woff");
+    src: url("../fonts/DisposableDroidBBBold.woff") format("woff");
 }
 
-/* Definição da fonte DisposableDroidBB-Italic */
 @font-face {
     font-family: "DisposableDroidBB-Italic";
-    src: url("../fonts/DisposableDroidBB-Italic.ttf") format("woff2"),
-         url("../fonts/DisposableDroidBB-Italic.ttf") format("woff");
+    src: url("../fonts/DisposableDroidBBItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'StardewValleyBold';
+    src: url('../fonts/StardewValleyBold.woff2') format('woff2'),
+        url('../fonts/StardewValleyBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StardewValley';
+    src: url('../fonts/StardewValley.woff2') format('woff2'),
+        url('../fonts/StardewValley.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
