@@ -23,20 +23,16 @@ https://getemoji.com
 </div>
 
 <div align="center">
- 
-  • Repositório contendo o meu primeiro projeto de portfolio.
- 
-</div>
-
-<div align="center">
   <a href="https://github.com/juletopi/JCPC_Portfolio/blob/main/CONTRIBUTING.md">Como contribuir</a> &#xa0; • &#xa0;
   <a href="https://github.com/juletopi/JCPC_Portfolio/issues">Issues</a> &#xa0; • &#xa0;
   <a href="https://github.com/juletopi/JCPC_Portfolio/discussions">Discussions</a>
 </div>
 
+----
+
 <!-- ABOUT THE PAGE -->
 
-## 📝 Descrição do Projeto
+## Sobre
 
 A página foi inicialmente criada como conteúdo de avaliação final de uma disciplina curso de ADS que fiz, mas continuei trabalhando por cima depois disso.
 
@@ -46,44 +42,32 @@ O projeto evoluiu para um portfolio com tema pixel/retro, misturando elementos e
   <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
 </div>
 
-## 👩‍💻 Tecnologias Utilizadas
+### Tecnologias Utilizadas
 
 <a href="https://www.w3schools.com/html/">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML-badge" width="97px">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML-badge" style="max-width: 100%;">
 </a>
 <a href="https://www.w3schools.com/css/">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"alt="CSS-badge" width="63px">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white"alt="CSS-badge" style="max-width: 100%;">
 </a>
 <a href="https://www.w3schools.com/js/">
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript-badge" width="140px">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript-badge" style="max-width: 100%;">
 </a>
 <a href="https://getbootstrap.com/">
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap-badge" width="130px">
+  <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap-badge" style="max-width: 100%;">
 </a>
 <a href="https://jquery.com/">
-  <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery-badge" width="100px">
+  <img src="https://img.shields.io/badge/jQuery-3.7-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery-badge" style="max-width: 100%;">
 </a>
-<a href="https://devicon.dev/">
-  <img src="https://img.shields.io/badge/Devicon-60BAE8?style=for-the-badge&logo=devicon&logoColor=white" alt="Devicon-badge" width="87px">
+<a href="https://fonts.google.com/specimen/VT323">
+  <img src="https://img.shields.io/badge/google_fonts_(VT323)-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white" alt="VT323-badge" style="max-width: 100%;">
 </a>
-
-<div align="left">
-  <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
-</div>
-
-<!-- CONTRIBUTIONS -->
-
-## 🤝 Contribuições
-
-<p>Todas as contribuições ao projeto são bem vindas!<br>Se você deseja contribuir para este projeto, há várias maneiras de fazer isso. Você pode:</p>
-<ul>
-  <li>Reportar bugs ou problemas;</li>
-  <li>Propor novos recursos ou melhorias;</li>
-  <li>Corrigir problemas através de pull requests;</li>
-  <li>Ajudar a melhorar a documentação;</li>
-  <li>Compartilhar o projeto com outras pessoas.</li>
-</ul>
-<p>Para saber mais sobre como contribuir, consulte o guia de contribuição <a href="https://github.com/juletopi/JCPC_Portfolio/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+<a href="https://www.dafont.com/disposable-droid-bb.font">
+  <img src="https://img.shields.io/badge/custom_font_(DisposableDroidBB)-4285F4?style=for-the-badge&logo=textpattern&logoColor=white" alt="DisposableDroidBB-badge" style="max-width: 100%;">
+</a>
+<a href="https://www.stardewvalley.net/">
+  <img src="https://img.shields.io/badge/custom_font_(StardewValley)-4285F4?style=for-the-badge&logo=textpattern&logoColor=white" alt="StardewValley-badge" style="max-width: 100%;">
+</a>
 
 <div align="left">
   <h6><a href="#jcpc-portfolio"> Voltar para o início ↺</a></h6>
@@ -93,7 +77,7 @@ O projeto evoluiu para um portfolio com tema pixel/retro, misturando elementos e
 
 <!-- AUTHOR -->
 
-## 👤 Autor
+## Autor
 
 <table>
   <tr>
@@ -164,4 +148,3 @@ O projeto evoluiu para um portfolio com tema pixel/retro, misturando elementos e
 <div align="center">
   Feito com ❤️ e ☕ por <a href="https://github.com/juletopi"> Juletopi</a>.
 </div>
-
