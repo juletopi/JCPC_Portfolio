@@ -23,7 +23,7 @@ https://getemoji.com
 </div>
 
 <div align="center">
-  <a href="https://github.com/juletopi/JCPC_Portfolio/blob/main/CONTRIBUTING.md">Como contribuir</a> &#xa0; • &#xa0;
+  <a href="#sobre">Sobre</a> &#xa0; • &#xa0;
   <a href="https://github.com/juletopi/JCPC_Portfolio/issues">Issues</a> &#xa0; • &#xa0;
   <a href="https://github.com/juletopi/JCPC_Portfolio/discussions">Discussions</a>
 </div>
