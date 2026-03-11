@@ -62,10 +62,10 @@ O projeto evoluiu para um portfolio com tema pixel/retro, misturando elementos e
 <a href="https://fonts.google.com/specimen/VT323">
   <img src="https://img.shields.io/badge/google_fonts_(VT323)-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white" alt="VT323-badge" style="max-width: 100%;">
 </a>
-<a href="https://www.dafont.com/disposable-droid-bb.font">
+<a href="https://www.1001fonts.com/disposabledroid-bb-font.html">
   <img src="https://img.shields.io/badge/custom_font_(DisposableDroidBB)-4285F4?style=for-the-badge&logo=textpattern&logoColor=white" alt="DisposableDroidBB-badge" style="max-width: 100%;">
 </a>
-<a href="https://www.stardewvalley.net/">
+<a href="https://fontstruct.com/fontstructions/show/1254619/stardew_valley">
   <img src="https://img.shields.io/badge/custom_font_(StardewValley)-4285F4?style=for-the-badge&logo=textpattern&logoColor=white" alt="StardewValley-badge" style="max-width: 100%;">
 </a>
 
