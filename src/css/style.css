@@ -12,6 +12,16 @@
     --bs-success-rgb: 72, 199, 116;
     --bs-danger-rgb: 241, 70, 104;
 
+    --menu-warning-color: #112f5c;
+    --skill-node-bg: #222;
+    --skill-node-border: #555;
+    --skill-node-icon: #888;
+    --skill-connector: #333;
+    --skill-node-shadow: rgba(0,0,0,0.5);
+    --skill-tooltip-bg: rgba(20, 20, 25, 0.95);
+    --skill-tooltip-muted: #ccc;
+    --skill-tooltip-shadow: rgba(0,0,0,0.8);
+
     --stardew-container: #ffc878;
     --stardew-container2: #f8ba70;
     --stardew-container3: #eba867;
@@ -27,6 +37,15 @@
     --tv-frame: #c0c0c0;
     --accent: #ff6b6b;
     --pixel-card-bg: rgba(255, 255, 255, 0.9);
+    --menu-warning-color: #9b6400;
+    --skill-node-bg: #e5e2d6;
+    --skill-node-border: #5f5f5f;
+    --skill-node-icon: #2e2e2e;
+    --skill-connector: #4c4c4c;
+    --skill-node-shadow: rgba(0,0,0,0.18);
+    --skill-tooltip-bg: #e5e2d6;
+    --skill-tooltip-muted: #4f4f4f;
+    --skill-tooltip-shadow: rgba(0,0,0,0.12);
 }
 
 body {
@@ -205,6 +224,24 @@ a { text-decoration: none; color: inherit; }
 .menu-item span { opacity: 0; transition: opacity 0.2s; margin-right: 10px; }
 .menu-item:hover, .menu-item.active { opacity: 1; transform: translateX(10px); color: var(--accent); text-shadow: 2px 2px 0px #000; }
 .menu-item:hover span, .menu-item.active span { opacity: 1; }
+
+[data-bs-theme="light"] .menu-item {
+    color: #6a645b;
+}
+
+[data-bs-theme="light"] .menu-item:hover,
+[data-bs-theme="light"] .menu-item.active {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.377);
+}
+
+[data-bs-theme="light"] .menu-item.text-warning {
+    color: #ff6b6b !important;
+    opacity: 1;
+}
+
+[data-bs-theme="light"] .menu-item.text-warning:hover {
+    color: #f14668 !important;
+}
 
 .bg-pixel-card {
     background: var(--stardew-gradient);
@@ -480,7 +517,7 @@ a { text-decoration: none; color: inherit; }
     bottom: 70px;
     left: 50%;
     width: 4px;
-    background-color: #333;
+    background-color: var(--skill-connector);
     transform: translateX(-50%);
     z-index: 0;
     box-shadow: inset 1px 0 rgba(255,255,255,0.1);
@@ -503,7 +540,7 @@ a { text-decoration: none; color: inherit; }
     left: 35%;
     right: 35%;
     height: 4px;
-    background-color: #333;
+    background-color: var(--skill-connector);
     z-index: -1;
     transform: translateY(-50%);
 }
@@ -511,8 +548,8 @@ a { text-decoration: none; color: inherit; }
 .skill-node {
     width: 64px;
     height: 64px;
-    background-color: #222;
-    border: 3px solid #555;
+    background-color: var(--skill-node-bg);
+    border: 3px solid var(--skill-node-border);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -520,12 +557,12 @@ a { text-decoration: none; color: inherit; }
     position: relative;
     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
-    box-shadow: 4px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 0px var(--skill-node-shadow);
 }
 
 .skill-node i {
     font-size: 32px;
-    color: #888;
+    color: var(--skill-node-icon);
     transition: color 0.3s;
 }
 
@@ -550,7 +587,7 @@ a { text-decoration: none; color: inherit; }
     left: 50%;
     transform: translateX(-50%) scale(0);
     width: 200px;
-    background-color: rgba(20, 20, 25, 0.95);
+    background-color: var(--skill-tooltip-bg);
     border: 2px solid var(--text-color);
     padding: 10px;
     border-radius: 4px;
@@ -559,7 +596,7 @@ a { text-decoration: none; color: inherit; }
     pointer-events: none;
     text-align: center;
     z-index: 1000;
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px var(--skill-tooltip-shadow);
 }
 
 .skill-node:hover .skill-tooltip {
@@ -577,7 +614,7 @@ a { text-decoration: none; color: inherit; }
 
 .tooltip-level {
     font-size: 0.9rem;
-    color: #ccc;
+    color: var(--skill-tooltip-muted);
     margin-bottom: 5px;
     display: block;
 }
@@ -585,9 +622,18 @@ a { text-decoration: none; color: inherit; }
 .tooltip-bar {
     width: 100%;
     height: 6px;
-    background: #444;
+    background: var(--skill-connector);
     border: 1px solid #fff;
     position: relative;
+}
+
+[data-bs-theme="light"] .skill-branch-title {
+    text-shadow: 2px 2px 0 rgba(2, 2, 2, 0.65);
+}
+
+[data-bs-theme="light"] .skill-node:hover i {
+    color: #111;
+    filter: none;
 }
 
 .tooltip-bar-fill {
@@ -596,16 +642,34 @@ a { text-decoration: none; color: inherit; }
     width: 0%;
 }
 
+@media (max-width: 1399px) {
+    .skill-row.multi-item::before {
+        left: 28%;
+        right: 28%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .skill-row.multi-item::before {
+        left: 25%;
+        right: 25%;
+    }
+}
+
 @media (max-width: 991px) {
     .skill-branch::before {
         top: 40px;
         bottom: 70px;
     }
     .skill-row.multi-item::before {
-        top: 50%;
-        left: 30%;
-        right: 30%;
+        left: 50%;
+        right: auto;
+        width: 120px;
+        transform: translateX(-50%);
     }
+    .retro-tv-container { margin-bottom: 50px; transform: scale(0.9); }
+    .game-menu { text-align: center; padding: 0; }
+    .menu-item { font-size: 1.4rem; }
 }
 
 @media (max-width: 768px) {
@@ -620,10 +684,28 @@ a { text-decoration: none; color: inherit; }
     #skills .text-center.mt-4 {
         display: none;
     }
+    .skill-row.multi-item::before {
+        left: 50%;
+        right: auto;
+        width: 160px;
+        transform: translateX(-50%);
+    }
 }
 
-@media (max-width: 991px) {
-    .retro-tv-container { margin-bottom: 50px; transform: scale(0.9); }
-    .game-menu { text-align: center; padding: 0; }
-    .menu-item { font-size: 1.4rem; }
+@media (max-width: 576px) {
+    .skill-row.multi-item::before {
+        left: 50%;
+        right: auto;
+        width: 140px;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 420px) {
+    .skill-row.multi-item::before {
+        left: 50%;
+        right: auto;
+        width: 120px;
+        transform: translateX(-50%);
+    }
 }
