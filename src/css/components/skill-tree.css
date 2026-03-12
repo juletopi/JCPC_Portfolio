@@ -1,0 +1,161 @@
+#skill-tree-root {
+    position: relative;
+    padding: 20px 0;
+}
+
+.skill-branch {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-branch-title {
+    font-family: var(--font-pixel);
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px #000;
+    z-index: 1;
+    position: relative;
+}
+
+.skill-branch::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    bottom: 70px;
+    left: 50%;
+    width: 4px;
+    background-color: var(--skill-connector);
+    transform: translateX(-50%);
+    z-index: 0;
+    box-shadow: inset 1px 0 rgba(255,255,255,0.1);
+}
+
+.skill-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.skill-row.multi-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    right: 35%;
+    height: 4px;
+    background-color: var(--skill-connector);
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.skill-node {
+    width: 64px;
+    height: 64px;
+    background-color: var(--skill-node-bg);
+    border: 4px solid var(--skill-node-border);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--skill-node-shadow);
+}
+
+.skill-node i {
+    font-size: 32px;
+    color: var(--skill-node-icon);
+    transition: color 0.3s;
+}
+
+.skill-node:hover {
+    transform: scale(1.15) translateY(-5px);
+    border-color: var(--accent);
+    z-index: 10;
+}
+
+.skill-node:hover i {
+    color: #fff;
+    filter: drop-shadow(0 0 5px currentColor);
+}
+
+.branch-frontend .skill-node:hover {
+    border-color: rgb(var(--bs-danger-rgb));
+}
+
+.branch-backend .skill-node:hover {
+    border-color: rgb(var(--bs-success-rgb));
+}
+
+.branch-tools .skill-node:hover {
+    border-color: rgb(var(--bs-primary-rgb));
+}
+
+.skill-tooltip {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 200px;
+    background-color: var(--skill-tooltip-bg);
+    border: 2px solid var(--text-color);
+    padding: 10px;
+    border-radius: 0;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 0 10px var(--skill-tooltip-shadow);
+}
+
+.skill-node:hover .skill-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.tooltip-title {
+    color: var(--accent);
+    font-family: var(--font-pixel);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.tooltip-level {
+    font-size: 0.9rem;
+    color: var(--skill-tooltip-muted);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.tooltip-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--skill-connector);
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.tooltip-bar-fill {
+    height: 100%;
+    background-color: var(--accent);
+    width: 0%;
+}
+
+[data-bs-theme="light"] .skill-branch-title {
+    text-shadow: 2px 2px 0 rgba(2, 2, 2, 0.65);
+}
+
+[data-bs-theme="light"] .skill-node:hover i {
+    color: #111;
+    filter: none;
+}

@@ -1,0 +1,131 @@
+.bg-pixel-card {
+    background: var(--stardew-gradient);
+    border-style: solid;
+    border-width: 20px;
+    border-image-source: url('../../images/stardew_valley/border.png');
+    border-image-slice: 24 22;
+    border-image-repeat: round;
+    border-radius: 20px;
+    padding: 2em !important;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.bg-pixel-card h2 {
+    font-family: 'StardewValleyBold', var(--font-pixel);
+    color: var(--stardew-text);
+    text-shadow: var(--stardew-text-shadow) -2px 1px;
+    font-size: 2.5rem;
+}
+
+.bg-pixel-card .pixel-text,
+.bg-pixel-card .lead {
+    font-family: 'StardewValley', var(--font-pixel);
+    color: var(--stardew-text);
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.bg-pixel-card .status-bar .badge {
+    background-color: var(--stardew-container);
+    color: var(--stardew-text);
+    border-style: solid;
+    border-width: 15px;
+    border-image-source: url('../../images/stardew_valley/tooltip_border.png');
+    border-image-slice: 24 22;
+    border-image-repeat: round;
+    border-radius: 15px;
+    font-family: 'StardewValley', var(--font-pixel);
+    font-size: 1rem;
+    padding: 8px 12px !important;
+    text-shadow: var(--stardew-text-shadow) -1px 1px;
+    filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.portrait-npc {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    image-rendering: pixelated;
+}
+
+.stardew-dialogue-box {
+    background-color: #e8d4a0;
+    border: 15px solid;
+    border-image: url('../../images/stardew_valley/tooltip_border.png') 24 22 round;
+    padding: 25px 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    font-family: var(--font-pixel);
+    image-rendering: pixelated;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stardew-dialogue-box::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background: none;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.portrait-container {
+    flex-shrink: 0;
+    padding: 8px;
+    background-color: #c9a870;
+    box-shadow:
+        0 0 0 3px #8b6f47,
+        inset 2px 2px 4px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.pixel-portrait {
+    width: 128px;
+    height: 128px;
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.dialogue-content {
+    flex: 1;
+    color: #3d2f1f;
+}
+
+.dialogue-title {
+    font-size: 1.6rem;
+    color: #2d1f0f;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+}
+
+.dialogue-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #4a3b24;
+    margin-bottom: 15px;
+}
+
+.stardew-badge {
+    background-color: #8b6f47;
+    color: #f5e6c8;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow:
+        0 0 0 2px #5d4a37,
+        2px 2px 0 rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,49 @@
+:root {
+    --font-pixel: 'VT323', 'DisposableDroidBB-Regular', monospace;
+
+    --bg-color: #191625;
+    --text-color: #dbc0ff;
+    --tv-bg: #111;
+    --tv-frame: #444;
+    --accent: #5ca8f5;
+    --pixel-card-bg: rgba(30, 30, 40, 0.8);
+
+    --bs-primary-rgb: 121, 87, 213;
+    --bs-success-rgb: 72, 199, 116;
+    --bs-danger-rgb: 241, 70, 104;
+
+    --menu-warning-color: #112f5c;
+    --skill-node-bg: #222;
+    --skill-node-border: #555;
+    --skill-node-icon: #888;
+    --skill-connector: #333;
+    --skill-node-shadow: rgba(0,0,0,0.5);
+    --skill-tooltip-bg: rgba(20, 20, 25, 0.95);
+    --skill-tooltip-muted: #ccc;
+    --skill-tooltip-shadow: rgba(0,0,0,0.8);
+
+    --stardew-container: #ffc878;
+    --stardew-container2: #f8ba70;
+    --stardew-container3: #eba867;
+    --stardew-text: #331f28;
+    --stardew-text-shadow: #ce9c5f;
+    --stardew-gradient: linear-gradient(180deg, var(--stardew-container) 0%, var(--stardew-container2) 50%, var(--stardew-container3) 100%);
+}
+
+[data-bs-theme="light"] {
+    --bg-color: #e6e2d3;
+    --text-color: #2c2c2c;
+    --tv-bg: #222;
+    --tv-frame: #c0c0c0;
+    --accent: #ff6b6b;
+    --pixel-card-bg: rgba(255, 255, 255, 0.9);
+    --menu-warning-color: #9b6400;
+    --skill-node-bg: #e5e2d6;
+    --skill-node-border: #5f5f5f;
+    --skill-node-icon: #424242;
+    --skill-connector: #4c4c4c;
+    --skill-node-shadow: rgba(0,0,0,0.18);
+    --skill-tooltip-bg: #e5e2d6;
+    --skill-tooltip-muted: #4f4f4f;
+    --skill-tooltip-shadow: rgba(0,0,0,0.12);
+}
