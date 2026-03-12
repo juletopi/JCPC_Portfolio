@@ -8,16 +8,16 @@ $(document).ready(function() {
             barColor: "rgb(241, 70, 104)",
             rows: [
                 [
-                    { name: "HTML5", icon: "devicon-html5-plain", desc: "Estruturação" },
-                    { name: "CSS3", icon: "devicon-css3-plain", desc: "Estilização & Flexbox" },
-                    { name: "JavaScript", icon: "devicon-javascript-plain", desc: "ES6+ & DOM" }
+                    { name: "HTML5", icon: "devicon-html5-plain", desc: "Estruturação & semântica" },
+                    { name: "CSS3", icon: "devicon-css3-plain", desc: "Estilização & layouts" },
+                    { name: "JavaScript", icon: "devicon-javascript-plain", desc: "ES6+ & DOM" },
                 ],
                 [
-                    { name: "Bootstrap", icon: "devicon-bootstrap-plain", desc: "UI Responsiva & Estilização Rápida" },
-                    { name: "JQuery", icon: "devicon-jquery-plain", desc: "Manipulação Simplificada" }
+                    { name: "Bootstrap", icon: "devicon-bootstrap-plain", desc: "Construção de UI responsiva" },
+                    { name: "jQuery", icon: "devicon-jquery-plain", desc: "Manipulação DOM" },
                 ],
                 [
-                    { name: "React", icon: "devicon-react-original", desc: "Componentes & Hooks" }
+                    { name: "React/React Native", icon: "devicon-react-original", desc: "Componentes & hooks" },
                 ]
             ]
         },
@@ -28,35 +28,48 @@ $(document).ready(function() {
             barColor: "rgb(72, 199, 116)",
             rows: [
                 [
-                    { name: "Python", icon: "devicon-python-plain", desc: "Automação & Scraping" },
-                    { name: "PHP", icon: "devicon-php-plain", desc: "Web Development" },
-                    { name: "C#", icon: "devicon-csharp-plain", desc: ".NET Core" }
+                    { name: "Node.js", icon: "devicon-nodejs-plain", desc: "Runtime JavaScript" },
+                    { name: "PHP", icon: "devicon-php-plain", desc: "Desenvolvimento Web" },
+                    { name: "Laravel", icon: "devicon-laravel-original", desc: "MVC framework PHP" },
                 ],
                 [
-                    { name: "Laravel", icon: "devicon-laravel-original", desc: "MVC Framework" }
+                    { name: "Python", icon: "devicon-python-plain", desc: "Automação & scripting" },
+                    { name: "Playwright", icon: "devicon-playwright-plain", desc: "Biblioteca de automação" },
+                    { name: "R", icon: "devicon-r-plain", desc: "Análise de dados" },
                 ],
                 [
-                    { name: "MySQL", icon: "devicon-mysql-plain", desc: "Queries & Relational" }
+                    { name: "C#", icon: "devicon-csharp-plain", desc: "OOP Tipagem avançado" },
+                    { name: ".NET Core", icon: "devicon-dotnetcore-plain", desc: ".NET Framework" },
+                ],
+                [
+                    { name: "MySQL", icon: "devicon-mysql-plain", desc: "Banco de dados relacional" },
+                    { name: "PostgreSQL", icon: "devicon-postgresql-plain", desc: "Banco de dados relacional" },
                 ]
             ]
         },
         productivity: {
-            title: "TOOLS/PROD",
+            title: "TOOLS & DEVOPS",
             id: "branch-tools",
             colorClass: "text-primary",
             barColor: "rgb(121, 87, 213)",
             rows: [
                 [
-                    { name: "Git", icon: "devicon-git-plain", desc: "Version Control" },
-                    { name: "GitHub", icon: "devicon-github-original", desc: "Repo Hosting $ Colaboração" }
+                    { name: "VS Code", icon: "devicon-vscode-plain", desc: "Editor de código principal" },
+                    { name: "Visual Studio", icon: "devicon-visualstudio-plain", desc: "IDE do C# / .NET" },
+                    { name: "RStudio", icon: "devicon-rstudio-plain", desc: "IDE do R" },
                 ],
                 [
-                    { name: "VS Code", icon: "devicon-vscode-plain", desc: "Editor Principal" },
-                    { name: "Visual Studio", icon: "devicon-visualstudio-plain", desc: "C# IDE" }
+                    { name: "Git", icon: "devicon-git-plain", desc: "Controle de versão" },
+                    { name: "GitHub", icon: "devicon-github-original", desc: "Repositório & colaboração" },
+                    { name: "GitLab", icon: "devicon-gitlab-plain", desc: "DevOps & CI/CD" },
                 ],
                 [
-                    { name: "Windows", icon: "devicon-windows11-original", desc: "OS Principal" },
-                    { name: "Linux", icon: "devicon-linux-plain", desc: "Ubuntu" }
+                    { name: "Azure DevOps", icon: "devicon-azuredevops-plain", desc: "Gerenciamento de tasks" },
+                    { name: "Notion", icon: "devicon-notion-plain", desc: "Anotações & documentação" },
+                ],
+                [
+                    { name: "Jupyter", icon: "devicon-jupyter-plain", desc: "Análise de dados" },
+                    { name: "Postman", icon: "devicon-postman-plain", desc: "API Testing" },
                 ]
             ]
         }
