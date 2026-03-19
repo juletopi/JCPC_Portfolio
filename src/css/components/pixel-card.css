@@ -1,3 +1,7 @@
+#projects {
+    margin-top: 3rem;
+}
+
 .pixel-card {
     background: transparent;
     border: 6px solid var(--text-color);

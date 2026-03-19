@@ -1,0 +1,48 @@
+#about {
+    position: relative;
+    overflow: hidden;
+    cursor: url('../../images/stardew_valley/cursor.webp'), auto;
+    background-image: url('../../images/stardew_valley/day_background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    min-height: 80vh;
+}
+
+#about * {
+    cursor: url('../../images/stardew_valley/cursor.webp'), auto;
+}
+
+.stardew-clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.75;
+    animation: clouds-pass 40s linear infinite;
+}
+
+.stardew-clouds .clouds {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.stardew-clouds .clouds img {
+    width: 100%;
+    display: block;
+}
+
+@keyframes clouds-pass {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+#about > .container {
+    position: relative;
+    z-index: 1;
+    max-width: min(1400px, calc(100% - 2rem));
+}

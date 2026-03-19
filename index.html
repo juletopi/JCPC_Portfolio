@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="src/css/components/pixel-card.css">
     <link rel="stylesheet" href="src/css/components/skill-tree.css">
     <link rel="stylesheet" href="src/css/components/footer.css">
+    <link rel="stylesheet" href="src/css/components/stardew-section.css">
 
     <link rel="stylesheet" href="src/css/responsive.css">
     <link rel="shortcut icon" href="src/images/icons/favicon.ico" type="image/x-icon">
@@ -79,30 +80,14 @@
     </header>
 
     <section id="about" class="py-5 section-pixel">
+        <div class="stardew-clouds" aria-hidden="true">
+            <div class="clouds"><img src="src/images/stardew_valley/clouds.webp" alt="movingClouds"></div>
+            <div class="clouds"><img src="src/images/stardew_valley/clouds.webp" alt="movingClouds"></div>
+            <div class="clouds"><img src="src/images/stardew_valley/clouds.webp" alt="movingClouds"></div>
+            <div class="clouds"><img src="src/images/stardew_valley/clouds.webp" alt="movingClouds"></div>
+        </div>
         <div class="container">
-            <div class="row align-items-center bg-pixel-card p-4 mt-2 mx-2">
-                <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <div class="avatar-container">
-                        <img src="src/images/stardew_valley/portrait_juletopi.png" class="img-fluid portrait-npc" alt="Julio Cezar">
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <h2 class="section-title">SOBRE MIM</span></h2>
-                    <p class="lead pixel-text">
-                        Heya folks! Sou Julio Cezar (Juletopi). Desenvolvedor Full-Stack e estudante do IFRO.<br>
-                        Trabalho criando robôs de webscraping com Python e desenvolvendo sites com PHP Laravel.
-                    </p>
-                    <p class="pixel-text">
-                        No meu tempo livre, voce provavelmente vai me encontrar estudando, ouvindo rock,<br>
-                        assistindo anime, jogando na Steam ou lendo mangas.
-                    </p>
-                    <div class="status-bar mt-3">
-                        <span class="badge bg-custom-primary p-2 me-2">LVL 22</span>
-                        <span class="badge bg-custom-secondary p-2 me-2">CLASS: FULL-SCTACK DEVELOPER</span>
-                        <span class="badge bg-custom-success p-2">HP: 100% ⚡ BOOSTED BY COFFEE </span>
-                    </div>
-                </div>
-            </div>
+            <div id="stardew-dialogue-root"></div>
         </div>
     </section>
 
@@ -180,5 +165,6 @@
     <script src="src/js/retro-tv.js"></script>
     <script src="src/js/skill-tree.js"></script>
     <script src="src/js/theme-toggle.js"></script>
+    <script src="src/js/stardew-dialogue-box.js"></script>
 </body>
 </html>
