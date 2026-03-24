@@ -220,3 +220,40 @@
     min-height: 320px;
     overflow-y: auto;
 }
+
+.stardew-spotify-player {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.stardew-spotify-player .stardew-spotify-link {
+    display: inline-block;
+    max-width: 100%;
+    text-decoration: none;
+    line-height: 0;
+    filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.25));
+}
+
+.stardew-spotify-player .stardew-spotify-link:hover {
+    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.35));
+}
+
+.stardew-spotify-widget-img {
+    max-width: min(100%, 820px);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#stardew-dialogue-root.stardew-dialogue--no-spotify .dialogue-tab[data-tab="spotify"] {
+    display: none !important;
+}
+
+#stardew-dialogue-root.stardew-dialogue--no-spotify #tab-spotify {
+    display: none !important;
+}

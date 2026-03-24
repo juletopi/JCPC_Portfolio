@@ -40,6 +40,26 @@ $(document).ready(function () {
             `,
         },
         {
+            id: 'spotify',
+            label: 'Escutando no Spotify',
+            icon: 'src/images/stardew_valley/spotify.svg',
+            title: '',
+            content: `
+                <div class="stardew-spotify-player">
+                    <a href="https://open.spotify.com/user/7qje4cjhxymamlcmxzo749qvo"
+                       target="_blank" rel="noopener noreferrer"
+                       class="stardew-spotify-link">
+                        <img
+                            class="stardew-spotify-widget-img"
+                            src="https://spotify-api-readme-fork.vercel.app/api/spotify/"
+                            alt="Player Spotify de Juletopi"
+                            loading="lazy"
+                        />
+                    </a>
+                </div>
+            `,
+        },
+        {
             id: 'contato',
             label: 'Entre em contato',
             icon: 'src/images/stardew_valley/map.svg',
@@ -125,4 +145,21 @@ $(document).ready(function () {
         root.find('.dialogue-panel').hide();
         root.find('#tab-' + tabId).show();
     });
+
+    const spotifyHiddenMq = window.matchMedia('(max-width: 480px)');
+
+    function syncSpotifyTabVisibility() {
+        const hideSpotify = spotifyHiddenMq.matches;
+        root.toggleClass('stardew-dialogue--no-spotify', hideSpotify);
+        if (hideSpotify && root.find('.dialogue-tab--active').data('tab') === 'spotify') {
+            root.find('.dialogue-tab').first().trigger('click');
+        }
+    }
+
+    syncSpotifyTabVisibility();
+    if (typeof spotifyHiddenMq.addEventListener === 'function') {
+        spotifyHiddenMq.addEventListener('change', syncSpotifyTabVisibility);
+    } else if (typeof spotifyHiddenMq.addListener === 'function') {
+        spotifyHiddenMq.addListener(syncSpotifyTabVisibility);
+    }
 });

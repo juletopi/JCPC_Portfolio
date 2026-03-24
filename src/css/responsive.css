@@ -31,6 +31,10 @@
     .dialogue-tabs-container {
         padding-left: 24px;
     }
+
+    .stardew-spotify-widget-img {
+        max-width: min(100%, 640px);
+    }
 }
 
 @media (max-width: 991px) {
@@ -79,6 +83,10 @@
     }
     .dialogue-tabs-container {
         padding-left: 18px;
+    }
+
+    .stardew-spotify-widget-img {
+        max-width: min(100%, 520px);
     }
 }
 
@@ -153,6 +161,10 @@
         overflow-y: auto;
         margin-left: 0 !important;
     }
+
+    .stardew-spotify-widget-img {
+        max-width: min(100%, 380px);
+    }
 }
 
 @media (max-width: 576px) {
@@ -177,6 +189,10 @@
     }
     .bg-pixel-card {
         padding: 1em !important;
+    }
+
+    .stardew-spotify-widget-img {
+        max-width: min(100%, 300px);
     }
 }
 
