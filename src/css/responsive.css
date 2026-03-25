@@ -18,6 +18,7 @@
     .bg-pixel-card .lead {
         font-size: 1.6rem;
     }
+
     .dialogue-tab {
         width: 76px;
         height: 72px;
@@ -35,6 +36,12 @@
     .stardew-spotify-widget-img {
         max-width: min(100%, 640px);
     }
+    .stardew-spotify-player {
+        gap: 2.5rem;
+    }
+    .stardew-dancing-npc {
+        width: 78px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -48,6 +55,7 @@
         width: 120px;
         transform: translateX(-50%);
     }
+
     .retro-tv-container {
         margin-bottom: 50px;
         transform: scale(0.9);
@@ -71,9 +79,13 @@
     .bg-pixel-card .status-bar a.badge {
         font-size: 1rem !important;
     }
+
     .dialogue-tab {
         width: 68px;
         height: 64px;
+    }
+    .dialogue-tab::before {
+        display: none;
     }
     .dialogue-tab--active {
         height: 54px;
@@ -88,21 +100,29 @@
     .stardew-spotify-widget-img {
         max-width: min(100%, 520px);
     }
-
     .stardew-spotify-player {
         gap: 1.5rem;
     }
-
     .stardew-spotify-player .stardew-spotify-link {
         margin-top: -2rem;
     }
-
     .stardew-dancing-npc {
-        width: 96px;
+        width: 64px;
     }
 }
 
 @media (max-width: 768px) {
+    #about > .container {
+        max-width: min(1400px, calc(100% - 0.5rem));
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+
+    #stardew-dialogue-root .dialogue-content-box.bg-pixel-card {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
     .portrait-npc {
         max-width: 200px;
     }
@@ -143,7 +163,7 @@
     .dialogue-tabs-container {
         padding-left: 0;
         margin-top: 32px;
-        margin-left: -10px;
+        margin-left: -16px;
         width: 80px;
         flex-shrink: 0;
         flex-direction: column;
@@ -177,17 +197,22 @@
     .stardew-spotify-widget-img {
         max-width: min(100%, 380px);
     }
-
     .stardew-spotify-player {
         margin-top: 4rem;
+        gap: 0.65rem;
     }
-
     .stardew-dancing-npc {
         display: none !important;
     }
 }
 
 @media (max-width: 576px) {
+    #about > .container {
+        max-width: min(1400px, calc(100% - 0.35rem));
+        padding-left: 0.15rem;
+        padding-right: 0.15rem;
+    }
+
     .skill-row.multi-item::before {
         left: 50%;
         right: auto;
@@ -211,20 +236,28 @@
         padding: 1em !important;
     }
 
+    .dialogue-tab::before {
+        display: none;
+    }
+
     .stardew-spotify-widget-img {
         max-width: min(100%, 300px);
     }
-
     .stardew-spotify-player {
         gap: 0.5rem;
     }
-
     .stardew-dancing-npc {
-        width: 60px;
+        width: 36px;
     }
 }
 
 @media (max-width: 420px) {
+    #about > .container {
+        max-width: min(1400px, calc(100% - 0.25rem));
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
+
     .skill-row.multi-item::before {
         left: 50%;
         right: auto;
@@ -244,6 +277,7 @@
         font-size: 0.8rem !important;
         padding: 5px 8px !important;
     }
+    
     .dialogue-tabs-container {
         width: 68px;
     }

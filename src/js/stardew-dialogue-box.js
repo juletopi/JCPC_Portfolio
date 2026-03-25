@@ -91,12 +91,29 @@ $(document).ready(function () {
         },
     ];
 
+    const STORAGE_KEY = 'stardew-dialogue-active-tab';
+    const spotifyHiddenMq = window.matchMedia('(max-width: 480px)');
+    const tabIds = dialogueTabs.map(function (t) { return t.id; });
+
+    function getInitialTabId() {
+        let id = localStorage.getItem(STORAGE_KEY);
+        if (!id || tabIds.indexOf(id) === -1) {
+            id = dialogueTabs[0].id;
+        }
+        if (spotifyHiddenMq.matches && id === 'spotify') {
+            id = dialogueTabs[0].id;
+        }
+        return id;
+    }
+
+    const initialTabId = getInitialTabId();
+
     const root = $('#stardew-dialogue-root');
     if (!root.length) return;
 
     let tabsHtml = `<div class="dialogue-tabs-container">`;
-    dialogueTabs.forEach(function (tab, index) {
-        const activeClass = index === 0 ? 'dialogue-tab--active' : '';
+    dialogueTabs.forEach(function (tab) {
+        const activeClass = tab.id === initialTabId ? 'dialogue-tab--active' : '';
         tabsHtml += `
             <button class="btn dialogue-tab ${activeClass}"
                     data-tooltip="${tab.label}"
@@ -108,8 +125,8 @@ $(document).ready(function () {
     tabsHtml += `</div>`;
 
     let panelsHtml = `<div class="dialogue-content-box bg-pixel-card mt-0 mx-2">`;
-    dialogueTabs.forEach(function (tab, index) {
-        const hidden = index === 0 ? '' : ' style="display:none"';
+    dialogueTabs.forEach(function (tab) {
+        const hidden = tab.id !== initialTabId ? ' style="display:none"' : '';
 
         let badgesHtml = '';
         if (tab.badges && tab.badges.length) {
@@ -148,23 +165,31 @@ $(document).ready(function () {
 
     root.html(`<div class="stardew-menu">${tabsHtml}${panelsHtml}</div>`);
 
-    root.on('click', '.dialogue-tab', function () {
-        const tabId = $(this).data('tab');
-
+    function setActiveTab(tabId) {
+        if (tabIds.indexOf(tabId) === -1) {
+            tabId = dialogueTabs[0].id;
+        }
+        if (spotifyHiddenMq.matches && tabId === 'spotify') {
+            tabId = dialogueTabs[0].id;
+        }
         root.find('.dialogue-tab').removeClass('dialogue-tab--active');
-        $(this).addClass('dialogue-tab--active');
-
+        root.find('.dialogue-tab[data-tab="' + tabId + '"]').addClass('dialogue-tab--active');
         root.find('.dialogue-panel').hide();
         root.find('#tab-' + tabId).show();
-    });
+        try {
+            localStorage.setItem(STORAGE_KEY, tabId);
+        } catch (e) {}
+    }
 
-    const spotifyHiddenMq = window.matchMedia('(max-width: 480px)');
+    root.on('click', '.dialogue-tab', function () {
+        setActiveTab($(this).data('tab'));
+    });
 
     function syncSpotifyTabVisibility() {
         const hideSpotify = spotifyHiddenMq.matches;
         root.toggleClass('stardew-dialogue--no-spotify', hideSpotify);
         if (hideSpotify && root.find('.dialogue-tab--active').data('tab') === 'spotify') {
-            root.find('.dialogue-tab').first().trigger('click');
+            setActiveTab(dialogueTabs[0].id);
         }
     }
 
