@@ -40,26 +40,6 @@ $(document).ready(function () {
             `,
         },
         {
-            id: 'spotify',
-            label: 'Escutando no Spotify',
-            icon: 'src/images/stardew_valley/spotify.svg',
-            title: '',
-            content: `
-                <div class="stardew-spotify-player">
-                    <a href="https://open.spotify.com/user/7qje4cjhxymamlcmxzo749qvo"
-                       target="_blank" rel="noopener noreferrer"
-                       class="stardew-spotify-link">
-                        <img
-                            class="stardew-spotify-widget-img"
-                            src="https://spotify-api-readme-fork.vercel.app/api/spotify/"
-                            alt="Player Spotify de Juletopi"
-                            loading="lazy"
-                        />
-                    </a>
-                </div>
-            `,
-        },
-        {
             id: 'contato',
             label: 'Entre em contato',
             icon: 'src/images/stardew_valley/map.svg',
@@ -76,6 +56,38 @@ $(document).ready(function () {
                 { cssClass: 'bg-custom-secondary',  text: 'GITHUB',    link: 'https://github.com/juletopi' },
                 { cssClass: 'bg-custom-info',       text: 'INSTAGRAM', link: 'https://www.instagram.com/juletopi/' },
             ],
+        },
+        {
+            id: 'spotify',
+            label: 'Escutando no Spotify',
+            icon: 'src/images/stardew_valley/spotify.svg',
+            title: '',
+            content: `
+                <div class="stardew-spotify-player">
+                    <img
+                        class="stardew-dancing-npc stardew-dancing-npc--left"
+                        src="src/images/stardew_valley/dancing_abigail.gif"
+                        alt="Abigail dançando"
+                        loading="lazy"
+                    />
+                    <a href="https://open.spotify.com/user/7qje4cjhxymamlcmxzo749qvo"
+                       target="_blank" rel="noopener noreferrer"
+                       class="stardew-spotify-link">
+                        <img
+                            class="stardew-spotify-widget-img"
+                            src="https://spotify-api-readme-fork.vercel.app/api/spotify/"
+                            alt="Player Spotify de Juletopi"
+                            loading="lazy"
+                        />
+                    </a>
+                    <img
+                        class="stardew-dancing-npc stardew-dancing-npc--right"
+                        src="src/images/stardew_valley/dancing_emily.gif"
+                        alt="Emily dançando"
+                        loading="lazy"
+                    />
+                </div>
+            `,
         },
     ];
 
