@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     cursor: url('../../images/stardew_valley/cursor.webp'), auto;
-    background-image: url('../../images/stardew_valley/night_background.png');
+    background-image: url('../../images/stardew_valley/background_night.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -22,7 +22,7 @@
 }
 
 html[data-bs-theme="light"] #about {
-    background-image: url('../../images/stardew_valley/day_background.webp');
+    background-image: url('../../images/stardew_valley/background_day.webp');
 }
 
 html[data-bs-theme="dark"] #about .stardew-clouds {
