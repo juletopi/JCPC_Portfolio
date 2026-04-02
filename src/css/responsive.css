@@ -112,6 +112,29 @@
 }
 
 @media (max-width: 768px) {
+    .nav-progress {
+        top: 0.75rem;
+        left: auto;
+        right: calc(0.75rem + 52px + 0.5rem);
+        width: min(19rem, calc(100vw - 8rem));
+        max-width: calc(100vw - 8rem);
+    }
+    .nav-progress__frame {
+        padding: 0.45rem 0.55rem;
+    }
+    .nav-progress__headline {
+        font-size: 1rem;
+    }
+    .nav-progress__link,
+    .nav-progress__external {
+        font-size: 0.76rem;
+    }
+
+    #theme-toggle-btn {
+        width: 52px;
+        height: 52px;
+    }
+
     #about > .container {
         max-width: min(1400px, calc(100% - 0.5rem));
         padding-left: 0.25rem;
@@ -207,6 +230,54 @@
 }
 
 @media (max-width: 576px) {
+    .nav-progress {
+        top: 0.5rem;
+        left: 0.5rem;
+        right: calc(0.5rem + 48px + 0.4rem);
+        width: auto;
+        max-width: calc(100vw - 0.5rem - 0.5rem - 48px - 0.4rem);
+    }
+    .nav-progress__frame {
+        border-width: 3px;
+        box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+        padding: 0.38rem 0.45rem;
+    }
+    .nav-progress__status {
+        gap: 0.35rem;
+    }
+    .nav-progress__level {
+        width: 2rem;
+        height: 2rem;
+        flex-basis: 2rem;
+    }
+    .nav-progress__headline {
+        font-size: 0.9rem;
+    }
+    .nav-progress__links {
+        gap: 0.35rem;
+    }
+    .nav-progress__link,
+    .nav-progress__external {
+        border-width: 1.5px;
+        padding: 0.28rem 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    body > nav.fixed-top {
+        padding-right: 0.5rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    #theme-toggle-btn {
+        width: 49px;
+        height: 49px;
+        border-width: 3px;
+    }
+    #theme-toggle-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+
     #about > .container {
         max-width: min(1400px, calc(100% - 0.35rem));
         padding-left: 0.15rem;
