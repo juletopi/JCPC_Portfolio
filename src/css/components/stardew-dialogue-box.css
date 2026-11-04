@@ -233,6 +233,12 @@
     text-align: center;
 }
 
+.stardew-spotify-widget-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .stardew-dancing-npc {
     width: 100px;
     height: auto;
@@ -242,17 +248,11 @@
 }
 
 .stardew-spotify-player .stardew-spotify-link {
-    display: inline-block;
-    max-width: 100%;
-    margin-top: -4rem;
+    display: block;
+    width: min(100%, 760px);
+    max-width: 760px;
+    flex: 1 1 760px;
+    margin-top: 0;
     text-decoration: none;
     line-height: 0;
-}
-    
-#stardew-dialogue-root.stardew-dialogue--no-spotify .dialogue-tab[data-tab="spotify"] {
-    display: none !important;
-}
-
-#stardew-dialogue-root.stardew-dialogue--no-spotify #tab-spotify {
-    display: none !important;
 }

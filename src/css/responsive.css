@@ -34,7 +34,7 @@
     }
 
     .stardew-spotify-widget-img {
-        max-width: min(100%, 640px);
+        max-width: 100%;
     }
     .stardew-spotify-player {
         gap: 2.5rem;
@@ -98,13 +98,13 @@
     }
 
     .stardew-spotify-widget-img {
-        max-width: min(100%, 520px);
+        max-width: 100%;
     }
     .stardew-spotify-player {
         gap: 1.5rem;
     }
     .stardew-spotify-player .stardew-spotify-link {
-        margin-top: -2rem;
+        margin-top: 0;
     }
     .stardew-dancing-npc {
         width: 64px;
@@ -218,7 +218,7 @@
     }
 
     .stardew-spotify-widget-img {
-        max-width: min(100%, 380px);
+        max-width: 100%;
     }
     .stardew-spotify-player {
         margin-top: 4rem;
@@ -312,7 +312,7 @@
     }
 
     .stardew-spotify-widget-img {
-        max-width: min(100%, 300px);
+        max-width: 100%;
     }
     .stardew-spotify-player {
         gap: 0.5rem;

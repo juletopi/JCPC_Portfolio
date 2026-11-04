@@ -1,5 +1,16 @@
 $(document).ready(function () {
 
+    const spotifyWidgetUrl = 'https://music-player-widget-ten.vercel.app/api/spotify/';
+    const spotifyWidgetParams = {
+        dark: '?background_type=blur_dark&border_color=ffffff',
+        light: '?background_type=blur_light&border_color=000000',
+    };
+
+    function updateSpotifyWidgetTheme() {
+        const theme = $('html').attr('data-bs-theme') === 'light' ? 'light' : 'dark';
+        $('.stardew-spotify-widget-img').attr('src', spotifyWidgetUrl + spotifyWidgetParams[theme]);
+    }
+
     const dialogueTabs = [
         {
             id: 'sobre-mim',
@@ -75,7 +86,7 @@ $(document).ready(function () {
                        class="stardew-spotify-link">
                         <img
                             class="stardew-spotify-widget-img"
-                            src="https://spotify-api-readme-fork.vercel.app/api/spotify/"
+                            src="${spotifyWidgetUrl}"
                             alt="Player Spotify de Juletopi"
                             loading="lazy"
                         />
@@ -92,15 +103,11 @@ $(document).ready(function () {
     ];
 
     const STORAGE_KEY = 'stardew-dialogue-active-tab';
-    const spotifyHiddenMq = window.matchMedia('(max-width: 480px)');
     const tabIds = dialogueTabs.map(function (t) { return t.id; });
 
     function getInitialTabId() {
         let id = localStorage.getItem(STORAGE_KEY);
         if (!id || tabIds.indexOf(id) === -1) {
-            id = dialogueTabs[0].id;
-        }
-        if (spotifyHiddenMq.matches && id === 'spotify') {
             id = dialogueTabs[0].id;
         }
         return id;
@@ -164,12 +171,19 @@ $(document).ready(function () {
     panelsHtml += `</div>`;
 
     root.html(`<div class="stardew-menu">${tabsHtml}${panelsHtml}</div>`);
+    updateSpotifyWidgetTheme();
+
+    const themeObserver = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+            if (mutation.attributeName === 'data-bs-theme') {
+                updateSpotifyWidgetTheme();
+            }
+        });
+    });
+    themeObserver.observe(document.documentElement, { attributes: true });
 
     function setActiveTab(tabId) {
         if (tabIds.indexOf(tabId) === -1) {
-            tabId = dialogueTabs[0].id;
-        }
-        if (spotifyHiddenMq.matches && tabId === 'spotify') {
             tabId = dialogueTabs[0].id;
         }
         root.find('.dialogue-tab').removeClass('dialogue-tab--active');
@@ -184,19 +198,4 @@ $(document).ready(function () {
     root.on('click', '.dialogue-tab', function () {
         setActiveTab($(this).data('tab'));
     });
-
-    function syncSpotifyTabVisibility() {
-        const hideSpotify = spotifyHiddenMq.matches;
-        root.toggleClass('stardew-dialogue--no-spotify', hideSpotify);
-        if (hideSpotify && root.find('.dialogue-tab--active').data('tab') === 'spotify') {
-            setActiveTab(dialogueTabs[0].id);
-        }
-    }
-
-    syncSpotifyTabVisibility();
-    if (typeof spotifyHiddenMq.addEventListener === 'function') {
-        spotifyHiddenMq.addEventListener('change', syncSpotifyTabVisibility);
-    } else if (typeof spotifyHiddenMq.addListener === 'function') {
-        spotifyHiddenMq.addListener(syncSpotifyTabVisibility);
-    }
 });
