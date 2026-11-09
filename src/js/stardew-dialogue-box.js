@@ -2,8 +2,8 @@ $(document).ready(function () {
 
     const spotifyWidgetUrl = 'https://music-player-widget-ten.vercel.app/api/spotify/';
     const spotifyWidgetParams = {
-        dark: '?background_type=blur_dark&border_color=ffffff',
-        light: '?background_type=blur_light&border_color=000000',
+        dark: '?theme=stardew&show_status=true',
+        light: '?theme=stardew&show_status=true',
     };
 
     function updateSpotifyWidgetTheme() {
